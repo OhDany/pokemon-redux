@@ -13,11 +13,9 @@ import CompraPokemonHook from './components/CompraPokemon.hook';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import BuscadorPokemon from './components/buscador/BuscadorPokemon';
-import ResltadoPokemon from './components/buscador/ResltadoPokemon';
+import ResltadoPokemon from './components/buscador/ResultadoPokemon';
 
 function App() {
-  console.log(store.getState());
-
   return (
     <Provider store={store}>
       <div className="app container">
