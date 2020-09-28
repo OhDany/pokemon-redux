@@ -12,6 +12,8 @@ import CompraPokemonHook from './components/CompraPokemon.hook';
 // Redux
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import BuscadorPokemon from './components/buscador/BuscadorPokemon';
+import ResltadoPokemon from './components/buscador/ResltadoPokemon';
 
 function App() {
   console.log(store.getState());
@@ -36,6 +38,12 @@ function App() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="col-12 mt-4 border-top pt-3">
+            <BuscadorPokemon />
+          </div>
+          <div className="col-12">
+            <ResltadoPokemon />
           </div>
         </div>
       </div>
