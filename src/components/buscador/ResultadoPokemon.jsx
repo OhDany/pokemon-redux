@@ -14,7 +14,9 @@ const ResltadoPokemon = () => {
           <span>{buscador.pokemon[0].name}</span>
         </div>
       )}
-      {buscador.error !== '' && <span className="text-danger">Error</span>}
+      {buscador.error !== '' && (
+        <span className="text-danger">{buscador.error}</span>
+      )}
     </div>
   );
 };
